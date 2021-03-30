@@ -28,13 +28,11 @@ int main() {
   printf("\nIngrese el numero de enteros a ordenar:\n");
   scanf("%d", &n_a_ordenar);
 
-  // creamos arreglo con N elementos
-  int *arr;
-  arr = (int *)malloc(n_a_ordenar * sizeof(int));
+  int arr[1000];
 
   // lo llenamos con numeros random
   int k = 0;
-  for (k; k < n_a_ordenar; k++) {
+  for (k; k < 1000; k++) {
     arr[k] = rand() % 999;
   }
 
@@ -43,7 +41,7 @@ int main() {
 
   // Imprimimos array ordenada
   printf("Array ordenada: \n");
-  imprimirArray(arr, n_a_ordenar);
+  imprimirArray(arr, 1000);
 
   return 0;
 }
